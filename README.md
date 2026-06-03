@@ -50,9 +50,10 @@ Before running device-code auth, ensure your app registration is configured for 
 
 
 Microsoft Graph (2) 
-CopilotPackages.Read.All  |  Delegated | Read all packages information| No | Granted for Contoso
-User.Read | Delegated | Sign in and read user profile  |  No |  Granted for Contoso
+CopilotPackages.Read.All  |  Delegated | Read all packages information| No | Granted for Contoso  
+User.Read                 | Delegated  | Sign in and read user profile  |  No |  Granted for Contoso
 
+try without admin if needed
 Then run:
 ```
 e.g.
@@ -70,7 +71,8 @@ C:\projects\m365\agentmeta>python agent_registry_exporter.py --mode device-code 
 
 3. App-only example (client credentials):
 ```
-python agent_registry_exporter.py --mode client-credentials \
+if app-only is used, then add 'application access' in authentication instead of Delegation access
+//python agent_registry_exporter.py --mode client-credentials \
   --tenant-id <TENANT_ID> --client-id <APP_ID> --client-secret <CLIENT_SECRET> \
   --out-json agents.json --out-csv agents.csv
 ```
