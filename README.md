@@ -48,10 +48,6 @@ pip install -r requirements.txt
 Before running device-code auth, ensure your app registration is configured for a public client:
 - Authentication > Allow public client flows = Yes
 
-#### Device Code Sign-In Flow
-![Device Sign-In Step 1](docs/Signin_0.png)
-![Device Sign-In Step 2](docs/Signin_3.png)
-![Device Sign-In Step 3](docs/signin_4.png)
 
 Microsoft Graph (2) 
 CopilotPackages.Read.All  |  Delegated | Read all packages information| No | Granted for Contoso
@@ -66,6 +62,11 @@ C:\projects\m365\agentmeta>python agent_registry_exporter.py --mode device-code 
 
 #### Running the Script
 ![Running Python Script](docs/Run_Py.png)
+
+#### Device Code Sign-In Flow
+![Device Sign-In Step 1](docs/Signin_0.png)
+![Device Sign-In Step 2](docs/Signin_3.png)
+![Device Sign-In Step 3](docs/signin_4.png)
 
 3. App-only example (client credentials):
 ```
