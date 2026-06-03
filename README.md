@@ -7,6 +7,8 @@
 ---
 
 Small CLI tool to extract metadata for agents registered in the Microsoft 365 admin center using Microsoft Graph beta endpoint:
+API reference: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/package/overview  
+
 
 GET https://graph.microsoft.com/beta/copilot/admin/catalog/packages
 
@@ -47,8 +49,9 @@ Before running device-code auth, ensure your app registration is configured for 
 - Authentication > Allow public client flows = Yes
 
 #### Device Code Sign-In Flow
-![Device Sign-In Step 1](docs/Signin_3.png)
-![Device Sign-In Step 2](docs/signin_4.png)
+![Device Sign-In Step 1](docs/Signin_0.png)
+![Device Sign-In Step 2](docs/Signin_3.png)
+![Device Sign-In Step 3](docs/signin_4.png)
 
 Microsoft Graph (2) 
 CopilotPackages.Read.All  |  Delegated | Read all packages information| No | Granted for Contoso
